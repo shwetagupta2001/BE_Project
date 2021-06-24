@@ -23,3 +23,6 @@ List<FFNavigationBarItem> items = [
     selectedBackgroundColor: Colors.orange[700],
   ),
 ];
+
+List Productlist;
+String ngrok="https://d344d975cbe6.ngrok.io";
