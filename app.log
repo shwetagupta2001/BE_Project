@@ -1,0 +1,607 @@
+ERROR:root:########### (2002, "Can't connect to MySQL server on 'localhost' (10061)") ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 88, in product
+    cur = mysql.connection.cursor()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_mysqldb\__init__.py", line 94, in connection
+    ctx.mysql_db = self.connect
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_mysqldb\__init__.py", line 81, in connect
+    return MySQLdb.connect(**kwargs)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\MySQLdb\__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to MySQL server on 'localhost' (10061)")
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\routing.py", line 1940, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### (2002, "Can't connect to MySQL server on 'localhost' (10061)") ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 93, in product
+    cur = mysql.connection.cursor()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_mysqldb\__init__.py", line 94, in connection
+    ctx.mysql_db = self.connect
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_mysqldb\__init__.py", line 81, in connect
+    return MySQLdb.connect(**kwargs)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\MySQLdb\__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to MySQL server on 'localhost' (10061)")
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    inputa=allValue["inputa"]
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    inputa=allValue["inputa"]
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    inputa=allValue["inputa"]
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    inputa=allValue["inputa"]
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    inputb = request.form.get("inputb")
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    inputb = request.form.get("inputb")
+TypeError: 'NoneType' object is not subscriptable
+ERROR:app:Exception on /example [POST]
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:app:Exception on /example [POST]
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:app:Exception on /example [POST]
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:app:Exception on /example [POST]
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 107, in example
+    inputa = allValue["input1"]
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\json\__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\Aakanksha\anaconda3\lib\json\__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\Aakanksha\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Aakanksha\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    allValue = request.json
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 69, in json
+    return self.get_json()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\json\__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\Aakanksha\anaconda3\lib\json\__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\Aakanksha\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Aakanksha\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    allValue = request.json
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 69, in json
+    return self.get_json()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\json\__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\Aakanksha\anaconda3\lib\json\__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\Aakanksha\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Aakanksha\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    allValue = request.json
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 69, in json
+    return self.get_json()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 119, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\json\__init__.py", line 253, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\Aakanksha\anaconda3\lib\json\__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\Aakanksha\anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Aakanksha\anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 106, in example
+    allValue = request.json
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 69, in json
+    return self.get_json()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\werkzeug\wrappers\json.py", line 128, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\wrappers.py", line 27, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### list indices must be integers or slices, not str ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 107, in example
+    inputa = allValue["input1"]
+TypeError: list indices must be integers or slices, not str
+ERROR:root:########### list indices must be integers or slices, not str ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 107, in example
+    inputa = allValue["input1"]
+TypeError: list indices must be integers or slices, not str
+ERROR:root:########### string indices must be integers ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\Desktop\practice logic\app.py", line 107, in example
+    inputa = allValue["input1"]
+TypeError: string indices must be integers
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\helpers.py", line 223, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
