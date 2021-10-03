@@ -605,3 +605,2079 @@ Traceback (most recent call last):
   File "C:\Users\Aakanksha\anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
     raise TypeError(
 TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 103, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 113, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1")
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 113, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1")
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 154)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 156)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 156)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 'Name' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+KeyError: 'Name'
+ERROR:root:########### 'Name' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+KeyError: 'Name'
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 156)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 'Name' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+KeyError: 'Name'
+ERROR:root:########### 400 Bad Request: The browser (or proxy) sent a request that this server could not understand. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 216, in loads
+    return _json.loads(s, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 156)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 104, in farmer_register
+    allvalue=request.json
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    raise BadRequest()
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR:root:########### 'Name' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+KeyError: 'Name'
+ERROR:root:########### 'Name' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+KeyError: 'Name'
+ERROR:root:########### 'Name' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+KeyError: 'Name'
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 113, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 113, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 113, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 113, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 113, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, 6888888888, Mumbai)' at line 1")
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### 'str' object is not callable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    query="insert into farmer(Name, Email_id, Password,Phone_no, Location) values (%s, %s, %s, %s, %s)" (Name, Email_id, Password, Phone_no,Location)
+TypeError: 'str' object is not callable
+ERROR:root:########### The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 'NoneType' object is not subscriptable ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 105, in farmer_register
+    Name=allvalue['Name']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute(''' INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1062, "Duplicate entry '6888888888' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 112, in farmer_register
+    cur.execute('''INSERT INTO farmer VALUES(%s,%s,%s,%s,%s)''',(Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '6888888888' for key 'PRIMARY'")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 119, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, Mumbai)' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 119, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta123, Mumbai)' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta1234, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 119, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta1234, Mumbai)' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta1234, Mumbai)' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 119, in farmer_register
+    cur.execute(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, shweta1234, Mumbai)' at line 1")
+ERROR:root:########### The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### (1062, "Duplicate entry '4578362517' for key 'PRIMARY'") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 125, in farmer_register
+    cur.execute("INSERT INTO farmer(Farmer_id,Name, Email_id, Password,Location) VALUES (%s,%s,%s,%s,%s)", (Farmer_id,Name, Email_id, Password,Location))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry '4578362517' for key 'PRIMARY'")
+ERROR:root:########### The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+ERROR:root:########### The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### decorator() got an unexpected keyword argument 'id' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: decorator() got an unexpected keyword argument 'id'
+ERROR:root:########### decorator() got an unexpected keyword argument 'id1' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: decorator() got an unexpected keyword argument 'id1'
+ERROR:root:########### decorator() got an unexpected keyword argument 'id1' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: decorator() got an unexpected keyword argument 'id1'
+ERROR:root:########### decorator() got an unexpected keyword argument 'id1' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: decorator() got an unexpected keyword argument 'id1'
+ERROR:root:########### decorator() got an unexpected keyword argument 'id1' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: decorator() got an unexpected keyword argument 'id1'
+ERROR:root:########### decorator() got an unexpected keyword argument 'id1' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: decorator() got an unexpected keyword argument 'id1'
+ERROR:root:########### decorator() got an unexpected keyword argument 'id1' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: decorator() got an unexpected keyword argument 'id1'
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### module 'flask.sessions' has no attribute 'get' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\BE-project-apis\app.py", line 144, in delete_entry
+    if not sessions.get('logged_in'):
+AttributeError: module 'flask.sessions' has no attribute 'get'
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\BE-project-apis\app.py", line 148, in delete_entry
+    cur.execute('delete from product where ID = ?'[allvalue['entry_id']])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\BE-project-apis\app.py", line 149, in delete_entry
+    cur.execute('delete from product where ID = ?'[allvalue['entry_id']])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\BE-project-apis\app.py", line 149, in delete_entry
+    cur.execute('delete from product where ID = %s'[allvalue['entry_id']])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e' at line 1")
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\BE-project-apis\app.py", line 149, in delete_entry
+    cur.execute('delete from product where ID = ?'[allvalue['entry_id']])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e' at line 1")
+ERROR:root:########### 'function' object has no attribute 'query' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\BE-project-apis\app.py", line 149, in delete_entry
+    product.query.filter(product.ID == allvalue['entry_id']).delete()
+AttributeError: 'function' object has no attribute 'query'
+ERROR:root:########### (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['entry_id']' at line 1") ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\BE-project-apis\app.py", line 149, in delete_entry
+    cur.execute("DELETE FROM product WHERE ID = allvalue['entry_id']")
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '['entry_id']' at line 1")
+ERROR:app:Exception on /delete [POST]
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'delete_entry' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'delete_entry' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2032, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:root:########### 'password' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 174, in login
+    Password=allvalue['password']
+KeyError: 'password'
+ERROR:root:########### 'password' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 174, in login
+    Password=allvalue['password']
+KeyError: 'password'
+ERROR:root:########### 'password' ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\BE-project-apis\app.py", line 174, in login
+    Password=allvalue['password']
+KeyError: 'password'
+ERROR:root:########### The view function for 'login' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'login' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function for 'login' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'login' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function for 'login' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'login' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\helpers.py", line 191, in make_response
+    return current_app.make_response(args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'farmer_register' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR:root:########### 405 Method Not Allowed: The method is not allowed for the requested URL. ###########
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1489, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1471, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\ctx.py", line 367, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing.py", line 2027, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
